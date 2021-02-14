@@ -1,0 +1,38 @@
+{
+    "name": "genesyslite/genesys-crm",
+    "description": "Api para la parte de clientes",
+    "type": "library",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mc Giver Avila Portocarrero",
+            "email": "xmcgiver12@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^7.3|^8.0",
+        "genesyslite/genesys-catalog": "^1.0.0",
+        "genesyslite/genesys-ubigee": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GenesysLite\\GenesysCrm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GenesysLite\\GenesysCrm\\Providers\\GenesysCrmServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
